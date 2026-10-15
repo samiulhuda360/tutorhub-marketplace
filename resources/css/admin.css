@@ -1,0 +1,7 @@
+/* Admin pages use Tailwind utility classes on top of the site's own stylesheet.
+   Theme and utilities only: Tailwind's base reset (preflight) would restyle the whole site. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@source "../views/admin";
